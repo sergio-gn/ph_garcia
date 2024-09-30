@@ -1,0 +1,30 @@
+---
+// Import the necessary components
+import MainLayout from "@/layouts/MainLayout.astro";
+import ContactSection from "@components/sections/fr/ContactSection_fr.astro";
+---
+
+<!--Utilizing MainLayout for the outer layout of the page, and defining meta for SEO purposes-->
+<MainLayout
+  title="Contact | PH Garcia Reparos"
+  lang="fr"
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://PH Garcia Reparos.uk//fr/contact",
+    url: "https://PH Garcia Reparos.uk//fr/contact",
+    name: "Nous Contacter | PH Garcia Reparos",
+    description:
+      "Vous avez des questions ou souhaitez discuter d'un projet ? Contactez-nous et élaborons ensemble la solution parfaite avec nos outils et services.",
+    isPartOf: {
+      "@type": "WebSite",
+      url: "https://PH Garcia Reparos.uk/fr/",
+      name: "PH Garcia Reparos",
+      description:
+        "PH Garcia Reparos propose des outils matériels de premier ordre et des services de construction experts pour répondre à tous vos besoins de projet.",
+    },
+    inLanguage: "fr",
+  }}
+>
+  <ContactSection />
+</MainLayout>
