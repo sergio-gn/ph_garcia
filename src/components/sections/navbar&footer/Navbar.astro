@@ -5,14 +5,14 @@ import ThemeIcon from "@components/ThemeIcon.astro";
 import NavLink from "@components/ui/links/NavLink.astro";
 import Authentication from "../misc/Authentication.astro";
 import enStrings from "@utils/navigation.ts";
-import frStrings from "@utils/fr/navigation.ts";
+import itStrings from "@utils/it/navigation.ts";
 import LanguagePicker from "@components/ui/LanguagePicker.astro";
 import logoImage from "@images/logo-ph.png";
 import logoImageWhite from "@images/logo-ph_white.png";
 
 // Select the correct translation based on the page's lang prop:
-const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
-const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
+const strings = Astro.currentLocale === "it" ? itStrings : enStrings;
+const homeUrl = Astro.currentLocale === "it" ? "/it" : "/";
 ---
 
 <!-- Main header component -->

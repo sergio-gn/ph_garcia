@@ -3,7 +3,7 @@
 import FooterSocialLink from "@components/ui/links/FooterSocialLink.astro";
 import EmailFooterInput from "@components/ui/forms/input/EmailFooterInput.astro";
 import enStrings from "@utils/navigation.ts";
-import frStrings from "@utils/fr/navigation.ts";
+import frStrings from "@utils/it/navigation.ts";
 import Icon from "@components/ui/icons/Icon.astro";
 import { Image } from "astro:assets";
 import logoImage from "@images/logo-ph.png";
@@ -11,11 +11,11 @@ import logoImageWhite from "@images/logo-ph_white.png";
 import { SITE } from "@data/constants";
 
 // Select the correct translation based on the page's lang prop:
-const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
+const strings = Astro.currentLocale === "it" ? frStrings : enStrings;
 
 // Define the variables that will be used in this component
-const sectionThreeTitle: string = Astro.currentLocale === "fr" ? "Rester à jour" : "Stay up to date";
-const sectionThreeContent: string = Astro.currentLocale === "fr" ? "Restez informé des derniers outils et des offres exclusives." :
+const sectionThreeTitle: string = Astro.currentLocale === "it" ? "Rester à jour" : "Stay up to date";
+const sectionThreeContent: string = Astro.currentLocale === "it" ? "Restez informé des derniers outils et des offres exclusives." :
   "Stay updated with the latest tools and exclusive deals.";
 ---
 
