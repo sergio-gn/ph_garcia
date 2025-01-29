@@ -11,28 +11,22 @@ const footerLinks = [
   {
     section: "Informações",
     links: [
-      { name: "Documentation", url: "/welcome-to-docs/" },
-      { name: "Tools & Equipment", url: "/products" },
-      { name: "Construction Services", url: "/services" },
+      { name: "Documentação", url: "/" },
+      { name: "Equipamentos", url: "/" },
+      { name: "Serviços", url: "/" },
     ],
   },
   {
-    section: "Company",
+    section: "Empresa",
     links: [
-      { name: "About us", url: "#" },
-      { name: "Blog", url: "/blog" },
-      { name: "Careers", url: "#" },
-      { name: "Customers", url: "#" },
+      { name: "Sobre nós", url: "#" },
     ],
   },
 ];
 // An object of links for social icons
 const socialLinks = {
-  facebook: "https://www.facebook.com/",
-  x: "https://twitter.com/",
-  github: "https://github.com/mearashadowfax/PH Garcia Reparos",
-  google: "https://www.google.com/",
-  slack: "https://slack.com/",
+  facebook: "https://www.facebook.com/maridoaluguelgarcia/",
+  whastapp: "http://wa.me/+5504199843157",
 };
 
 export default {

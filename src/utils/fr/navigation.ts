@@ -28,11 +28,8 @@ const footerLinks = [
 ];
 
 const socialLinks = {
-  facebook: "#",
-  x: "#",
-  github: "https://github.com/mearashadowfax/PH Garcia Reparos",
-  google: "#",
-  slack: "#",
+  facebook: "https://www.facebook.com/maridoaluguelgarcia/",
+  whatsapp: "http://wa.me/+5504199843157",
 };
 
 export default {
