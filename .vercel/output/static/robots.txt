@@ -1,0 +1,23 @@
+User-agent: Googlebot
+Disallow:
+Allow: /
+Crawl-delay: 10
+
+User-agent: meta-externalagent
+Disallow:
+Allow: /
+
+User-agent: Yandex
+Disallow:
+Allow: /
+Crawl-delay: 2
+
+User-agent: archive.org_bot
+Disallow:
+Allow: /
+Crawl-delay: 2
+
+User-agent: *
+Allow: /
+
+Sitemap: https://phgarcia.com.br/sitemap-index.xml
