@@ -4,15 +4,9 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import MainSection from "@components/ui/blocks/MainSection.astro";
 import LeftSection from "@components/ui/blocks/LeftSection.astro";
 import RightSection from "@components/ui/blocks/RightSection.astro";
-import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
 
 // Import necessary images
-import blueprints from "@images/torneira.jpg";
-import personWorking from "@images/torneira2.png";
 import beforeAfter from "@images/projeto_banheiro.png";
-import constructionWorkers from "@images/ar-condicionado1.jpg";
-import aerialView from "@images/ar_condicionado_depois.jpg";
-import usingTools from "@images/pintura_corredor.jpg";
 import progressBuilding from "@images/piso_antes.png";
 import underConstruction from "@images/piso_depois.png";
 import { SITE } from "@data/constants";
@@ -35,17 +29,6 @@ interface Article {
 
 const articles: Article[] = [
   {
-    isRightSection: true,
-    title: "Especialista em Reparos",
-    subTitle:
-      "Conte com Ph Garcia para reparar sua pia, banheiro, ou que vier em sua mente. Comprometimento com a qualidade por um preço justo.",
-    single: false,
-    imgOne: blueprints,
-    imgOneAlt: "Plantas arquitetônicas e tablet digital com planos de construção.",
-    imgTwo: personWorking,
-    imgTwoAlt: "Profissional trabalhando em um escritório de engenharia",
-  },
-  {
     isRightSection: false,
     title: "Fases do Projeto: Renovação Banheiro",
     subTitle:
@@ -53,28 +36,8 @@ const articles: Article[] = [
     img: beforeAfter,
     imgAlt: "Local de construção antes e depois da reforma",
     btnExists: true,
-    btnTitle: "Chama o PH no WhatsApp",
-    btnURL: "#",
-  },
-  {
-    isRightSection: true,
-    title: "Instalação e Limpeza de Ar Condicionado",
-    subTitle:
-      "Oferecemos serviços especializados de instalação e limpeza de ar-condicionado, garantindo eficiência, durabilidade e qualidade do ar para o seu ambiente. Nossa equipe qualificada realiza a instalação de forma segura e precisa, seguindo todas as normas técnicas. Além disso, a limpeza periódica é essencial para manter o bom desempenho do aparelho, evitando acúmulo de poeira e bactérias, proporcionando um ar mais puro e saudável. Conte com a nossa experiência para um serviço confiável e de alto padrão!",
-    single: false,
-    imgOne: constructionWorkers,
-    imgOneAlt: "Trabalhadores da construção coordenando um projeto",
-    imgTwo: aerialView,
-    imgTwoAlt: "Vista aérea de um canteiro de obras em andamento",
-  },
-  {
-    isRightSection: false,
-    title: "Garantindo Durabilidade e Qualidade",
-    subTitle:
-      "Nosso compromisso com seu projeto não termina na entrega. Todos os projetos são feitos pensados na Durabilidade.",
-    img: usingTools,
-    imgAlt:
-      "Profissional com colete laranja e preto, usando capacete branco e ferramenta elétrica",
+    btnTitle: "Chamar o PH no WhatsApp",
+    btnURL: "https://wa.me//5541999843157?text=Preciso%20de%20um%20or%C3%A7amento",
   },
   {
     isRightSection: true,
@@ -87,12 +50,12 @@ const articles: Article[] = [
     imgTwo: underConstruction,
     imgTwoAlt: "Prédio marrom e cinza em fase de construção",
     btnExists: true,
-    btnTitle: "Leia Mais",
-    btnURL: "/instalacao-de-pisos-em-curitiba",
+    btnTitle: "Chamar o PH no WhatsApp",
+    btnURL: "https://wa.me//5541999843157?text=Preciso%20de%20um%20or%C3%A7amento",
   },
 ];
 
-const pageTitle: string = `Services | ${SITE.title}`;
+const pageTitle: string = `Instalação de Pisos Em Curitiba | ${SITE.title}`;
 ---
 
 <MainLayout
@@ -114,10 +77,10 @@ const pageTitle: string = `Services | ${SITE.title}`;
   }}
 >
   <MainSection
-  title="Unindo Experiência à Sua Visão"
-  subTitle="Na PH Garcia Reparos, temos orgulho em oferecer soluções completas e um serviço de qualidade. Nossa equipe experiente está dedicada a apoiar seu projeto do início ao fim com uma variedade de serviços especializados."
+  title="Instalação de Pisos Em Curitiba"
+  subTitle="Na PH Garcia Reparos, instalamos com muito cuidado e qualidade seu porcelanato ou azulejo em curitiba."
   btnExists={true}
-  btnTitle="Chama o PH no WhatsApp!"
+  btnTitle="Chamar o PH no WhatsApp!"
   btnURL="https://wa.me//5541999843157?text=Preciso%20de%20um%20or%C3%A7amento"
   />
   {
@@ -148,24 +111,4 @@ const pageTitle: string = `Services | ${SITE.title}`;
     );
   })
   }
-  <FeaturesStats
-  title="Nossos Números"
-  subTitle="Nosso compromisso com a qualidade e confiabilidade é evidente em cada projeto que realizamos. Na PH Garcia Reparos, estamos dedicados a fornecer serviços líderes do setor para garantir que seus projetos de construção sejam feitos para durar."
-  mainStatTitle="96%"
-  mainStatSubTitle="dos nossos clientes classificam sua experiência com a PH Garcia Reparos como excepcional"
-  stats={[
-    {
-      stat: "99.8%",
-      description: "taxa de conclusão de projetos",
-    },
-    {
-      stat: "5.000+",
-      description: "instalações bem-sucedidas",
-    },
-    {
-      stat: "85%",
-      description: "crescimento de clientes ano após ano",
-    },
-  ]}
-/>
 </MainLayout>

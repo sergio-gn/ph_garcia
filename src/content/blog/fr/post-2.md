@@ -2,7 +2,7 @@
 title: "Améliorer la Sécurité et l'Artisanat avec les Services de Construction de PH Garcia Reparos"
 description: "Services de construction de qualité pour des résultats durables"
 author: "Brad"
-authorImage: "@/images/blog/brad.avif"
+authorImage: "@/images/blog/ph.png"
 authorImageAlt: "Avatar Description"
 pubDate: 2024-02-10
 cardImage: "@/images/blog/post-2.avif"

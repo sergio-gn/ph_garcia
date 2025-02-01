@@ -3,7 +3,7 @@ title: "Simplifiez l'Approvisionnement et Restez dans les Limites du Budget avec
 description: "Outils abordables et durables pour des projets de construction efficaces"
 author: "Olga Zabegina"
 role: "Directrice Marketing Stratégique"
-authorImage: "@/images/blog/anna.avif"
+authorImage: "@/images/blog/ph.png"
 authorImageAlt: "Avatar Description"
 pubDate: 2024-02-18
 cardImage: "@/images/blog/post-3.avif"

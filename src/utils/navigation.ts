@@ -11,15 +11,15 @@ const footerLinks = [
   {
     section: "Informações",
     links: [
-      { name: "Documentação", url: "/" },
-      { name: "Equipamentos", url: "/" },
-      { name: "Serviços", url: "/" },
+      { name: "Obras Concluídas", url: "/obras" },
+      { name: "Serviços", url: "/servicos" },
+      { name: "Contato", url: "/contato" },
     ],
   },
   {
     section: "Empresa",
     links: [
-      { name: "Sobre nós", url: "#" },
+      { name: "Blog", url: "/blog" },
     ],
   },
 ];
