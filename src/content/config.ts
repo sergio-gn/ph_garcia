@@ -88,9 +88,21 @@ const insightsCollection = defineCollection({
   }),
 });
 
+const reformasCollection = defineCollection({
+  type: "content",
+  schema: ({ image }) => z.object ({
+  title: z.string(),
+  description: z.string(),
+  // contents: z.array(z.string()),
+  cardImage: image(),
+  cardImageAlt: z.string(),
+  }),
+});
+
 export const collections = {
   docs: defineCollection({ schema: docsSchema() }),
   'products': productsCollection,
+  'reformas': reformasCollection,
   'blog': blogCollection,
   'insights': insightsCollection,
 };

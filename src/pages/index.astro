@@ -16,7 +16,8 @@ import pricing from "@data/pricing.json";
 
 import featureImage from "@images/ph_garcia_pintura.png";
 import construction from "@images/eletricos.jpg";
-import tools from "@images/piso_depois.png";
+import tools from "@images/piso_antes_depois.png";
+import hidraulic from "@images/antes_depois_hidraulica.png";
 import dashboard from "@images/pintura.jpg";
 
 const avatarSrcs: Array<string> = [
@@ -62,22 +63,22 @@ const avatarSrcs: Array<string> = [
     title=`Nossos <span class="text-yellow-500 dark:text-yellow-400">Serviços:</span>`
     tabs={[
       {
-        heading: "Instalação de Pisos",
-        content:
-          "Aplicação de porcelanato, laminado, vinílico e outros tipos de revestimentos com acabamento profissional.",
-        svg: "tools",
-        src: tools,
-        alt: "Yellow and black heavy equipment on brown grass field",
-        first: true,
-      },
-      {
         heading: "Pintura",
         content:
           "Pintura interna e externa para renovar sua casa ou escritório.",
         svg: "dashboard",
         src: dashboard,
         alt: "A screenshot or graphic representation of the intuitive dashboard",
-        second: true,
+        first: true,
+      },
+      {
+        heading: "Instalação de Pisos",
+        content:
+          "Aplicação de porcelanato, laminado, vinílico e outros tipos de revestimentos com acabamento profissional.",
+        svg: "tools",
+        src: tools,
+        alt: "Yellow and black heavy equipment on brown grass field",
+        first: false,
       },
       {
         heading: "Serviços Elétricos",
@@ -92,9 +93,9 @@ const avatarSrcs: Array<string> = [
         content:
           "Conserto de vazamentos, instalação de torneiras, registros, caixas d’água e muito mais.",
         svg: "tools",
-        src: tools,
+        src: hidraulic,
         alt: "Yellow and black heavy equipment on brown grass field",
-        first: true,
+        first: false,
       },
     ]}
   />

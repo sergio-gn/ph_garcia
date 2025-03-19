@@ -15,7 +15,7 @@ import { SITE } from "@data/constants";
 // getStaticPaths is used to pre-render all routes based on the blog posts
 export async function getStaticPaths() {
   const blogPosts = await getCollection("blog", ({ id }) => {
-    return id.startsWith("en/");
+    return id.startsWith("");
   });
   return blogPosts.map((post) => ({
     params: { slug: post.slug },
@@ -29,7 +29,7 @@ const { post } = Astro.props;
 const blogPosts: CollectionEntry<"blog">[] = await getCollection(
   "blog",
   ({ id }) => {
-    return id.startsWith("en/");
+    return id.startsWith("");
   }
 );
 

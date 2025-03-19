@@ -16,16 +16,20 @@ export default defineConfig({
   integrations: [
     tailwind(),
     sitemap({
-      i18n: {
-        defaultLocale: "pt-br", // All urls that don't contain `fr` after `https://screwfast.uk/` will be treated as default locale, i.e. `en`
-        locales: {
-          pt : "pt-br",
-          en: "en", // The `defaultLocale` value must present in `locales` keys
-          it: "it",
-          es: "es",
-        },
+      filter: (page) => {
+        return !page.startsWith("/en/") &&
+               !page.startsWith("/fr/") &&
+               !page.startsWith("/dr/") &&
+               !page.startsWith("/ja/") &&
+               !page.startsWith("/es/");
       },
+      serialize: (page) => ({
+        loc: page,
+        changefreq: "weekly", 
+        priority: page === "/" ? 1.0 : 0.7,
+      }),
     }),
+      
     starlight({
       title: "ScrewFast Docs",
       defaultLocale: "root",
