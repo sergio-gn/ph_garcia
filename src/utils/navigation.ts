@@ -2,6 +2,11 @@
 const navBarLinks = [
   { name: "Início", url: "/" },
   { name: "Obras Concluídas", url: "/obras" },
+  { name: "Hidraulica", url: "/reforma-hidraulica-curitiba" },
+  { name: "Eletrica", url: "/servicos-eletrica-em-curitiba" },
+  { name: "Pintura", url: "/pintura-de-parede-em-curitiba" },
+  { name: "Reparos", url: "/reparos-em-curitiba" },
+  { name: "Pisos", url: "/instalacao-de-pisos-em-curitiba" },
   { name: "Serviços", url: "/servicos" },
   { name: "Blog", url: "/blog" },
   { name: "Contato", url: "/contato" },
@@ -12,6 +17,7 @@ const footerLinks = [
     section: "Informações",
     links: [
       { name: "Obras Concluídas", url: "/obras" },
+      { name: "Hidraulica", url: "/reforma-hidraulica-curitiba" },
       { name: "Serviços", url: "/servicos" },
       { name: "Contato", url: "/contato" },
     ],
